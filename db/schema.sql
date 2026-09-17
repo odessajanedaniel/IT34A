@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS activity_logs(
+=======
+CREATE TABLE IF NOT EXISTS activity_logs (
+>>>>>>> origin/main
     activity_log_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id VARCHAR(255),
     user_email VARCHAR(255),
     activity_log_action VARCHAR(50) NOT NULL,
+<<<<<<< HEAD
     activity_log_status ENUM('success','failed') DEFAULT 'success',
+=======
+    activity_log_status ENUM('success', 'failed') DEFAULT 'success',
+>>>>>>> origin/main
 
     -- Client Parameters
     activity_log_ip_address VARCHAR(45),
     activity_log_user_agent VARCHAR(255),
+<<<<<<< HEAD
     
     -- Timestamp
     activity_log_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -62,4 +71,9 @@ VALUES
     'user',
     '$2y$10$HNfhClczEWBxcFuJwP53iu2Y75Tba7IEtmX8vX.1tp0dZ5EVt9CbO',
     'user'
+=======
+
+    -- Timestamps
+    activity_log_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+>>>>>>> origin/main
 );

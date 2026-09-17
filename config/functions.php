@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 function redirect($path)
 {
     header("Location: " . BASE_URL . $path);
@@ -65,3 +66,12 @@ function requireRole($role)
         die('Access Denied');
     }
 }
+=======
+funtion redirect($path){
+    header("Location:" . BASE_URL . $path);
+    exit;
+}
+
+
+?> 
+>>>>>>> origin/main
